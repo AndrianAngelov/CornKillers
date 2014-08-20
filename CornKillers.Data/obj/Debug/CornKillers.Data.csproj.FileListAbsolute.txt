@@ -1,0 +1,7 @@
+D:\new age\1 TELERIK\JobAttack\REAL\ASP.NET_MVC\Projects\cornkillers\CornKillers.Data\obj\Debug\ResolveAssemblyReference.cache
+D:\new age\1 TELERIK\JobAttack\REAL\ASP.NET_MVC\Projects\cornkillers\CornKillers.Data\bin\Debug\CornKillers.Data.dll
+D:\new age\1 TELERIK\JobAttack\REAL\ASP.NET_MVC\Projects\cornkillers\CornKillers.Data\bin\Debug\CornKillers.Data.pdb
+D:\new age\1 TELERIK\JobAttack\REAL\ASP.NET_MVC\Projects\cornkillers\CornKillers.Data\bin\Debug\CornKillers.Models.dll
+D:\new age\1 TELERIK\JobAttack\REAL\ASP.NET_MVC\Projects\cornkillers\CornKillers.Data\bin\Debug\CornKillers.Models.pdb
+D:\new age\1 TELERIK\JobAttack\REAL\ASP.NET_MVC\Projects\cornkillers\CornKillers.Data\obj\Debug\CornKillers.Data.dll
+D:\new age\1 TELERIK\JobAttack\REAL\ASP.NET_MVC\Projects\cornkillers\CornKillers.Data\obj\Debug\CornKillers.Data.pdb

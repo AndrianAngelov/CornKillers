@@ -1,0 +1,87 @@
+﻿@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url("//themes.googleusercontent.com/static/fonts/opensans/v6/u-WUoqrET9fUeobQW7jkRT8E0i7KZn-EPnyo3HZu7kw.woff") format('woff');
+}
+
+body 
+{
+	color:#282828;
+	/*background-color:#282828;*/
+	/*background-image:  url(../Content/Images/bg-pop-corns.jpg);
+    background-repeat: repeat;*/
+    
+}
+
+header
+{
+	/*background-color:#2F575D;*/
+	background-image:
+    radial-gradient(
+      #2F575D,
+      #28363D
+    );
+}
+
+.container-fluid
+{
+	background-color:#DEE1DD;
+}
+
+.gray
+{
+	background:#6D9197;
+}
+
+footer
+{
+	color:#fff;
+	background-color:#2F575D;
+}
+
+.vcenter-row {
+    display:table;
+}
+.vcenter {
+    display:table-cell;
+    vertical-align:middle;
+    float:none;
+}
+
+footer div:nth-child(3) > a {
+    color: inherit; 
+    text-decoration: none;
+}
+footer div:nth-child(3) > a:hover {
+    font-size:1.2em;
+}
+
+/*===================
+	 LoginForm
+====================*/
+#LoginForm
+{
+	padding:15px 0 15px 0;
+}
+
+/*===================
+	 InfoSlider
+====================*/
+#InfoSlider
+{
+	/*background-image:  url(../Content/Images/film.png);
+	background-size:100% 100%;
+	padding:30px;*/
+}
+
+/*===================
+	 LoginPanel
+====================*/
+#LoginPanel,#RegistrationPanel
+{
+	background-image:  url(../Content/Images/film.png);
+	background-size:100% 100%;
+	padding:15px;
+}
+
