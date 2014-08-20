@@ -4,6 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using System.Data.Entity;
+using CornKillers.Data;
+using CornKillers.Data.Migrations;
 
 namespace CornKillers
 {
@@ -44,6 +47,8 @@ namespace CornKillers
 
         protected void Application_Start()
         {
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<CornKillersContext, Configuration>());
+
             AreaRegistration.RegisterAllAreas();
 
             RegisterRoutes(RouteTable.Routes);

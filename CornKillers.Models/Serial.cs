@@ -13,5 +13,9 @@ namespace CornKillers.Models
         }
 
         public int SerialID { get; set; }
+
+        public string Name { get; set; }
+
+        public string Description { get; set; }
     }
 }
