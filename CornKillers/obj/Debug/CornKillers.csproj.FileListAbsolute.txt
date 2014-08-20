@@ -7,3 +7,14 @@ D:\new age\1 TELERIK\JobAttack\REAL\ASP.NET_MVC\Projects\cornkillers\CornKillers
 D:\new age\1 TELERIK\JobAttack\REAL\ASP.NET_MVC\Projects\cornkillers\CornKillers\bin\CornKillers.Models.dll
 D:\new age\1 TELERIK\JobAttack\REAL\ASP.NET_MVC\Projects\cornkillers\CornKillers\bin\CornKillers.Data.pdb
 D:\new age\1 TELERIK\JobAttack\REAL\ASP.NET_MVC\Projects\cornkillers\CornKillers\bin\CornKillers.Models.pdb
+D:\new age\1 TELERIK\JobAttack\REAL\ASP.NET_MVC\Projects\CornKillers_GitHub\CornKillers\bin\CornKillers.dll
+D:\new age\1 TELERIK\JobAttack\REAL\ASP.NET_MVC\Projects\CornKillers_GitHub\CornKillers\bin\CornKillers.pdb
+D:\new age\1 TELERIK\JobAttack\REAL\ASP.NET_MVC\Projects\CornKillers_GitHub\CornKillers\bin\CornKillers.Data.dll
+D:\new age\1 TELERIK\JobAttack\REAL\ASP.NET_MVC\Projects\CornKillers_GitHub\CornKillers\bin\CornKillers.Models.dll
+D:\new age\1 TELERIK\JobAttack\REAL\ASP.NET_MVC\Projects\CornKillers_GitHub\CornKillers\bin\EntityFramework.dll
+D:\new age\1 TELERIK\JobAttack\REAL\ASP.NET_MVC\Projects\CornKillers_GitHub\CornKillers\bin\CornKillers.Data.pdb
+D:\new age\1 TELERIK\JobAttack\REAL\ASP.NET_MVC\Projects\CornKillers_GitHub\CornKillers\bin\CornKillers.Models.pdb
+D:\new age\1 TELERIK\JobAttack\REAL\ASP.NET_MVC\Projects\CornKillers_GitHub\CornKillers\bin\EntityFramework.xml
+D:\new age\1 TELERIK\JobAttack\REAL\ASP.NET_MVC\Projects\CornKillers_GitHub\CornKillers\obj\Debug\ResolveAssemblyReference.cache
+D:\new age\1 TELERIK\JobAttack\REAL\ASP.NET_MVC\Projects\CornKillers_GitHub\CornKillers\obj\Debug\CornKillers.dll
+D:\new age\1 TELERIK\JobAttack\REAL\ASP.NET_MVC\Projects\CornKillers_GitHub\CornKillers\obj\Debug\CornKillers.pdb
