@@ -11,7 +11,7 @@ Inherits="System.Web.Mvc.ViewPage<CornKillers.Models.LogOnModel>" %>
         <div class="container">
             <div id="LoginForm" class="row">
                 <div id="InfoSlider" class="col-xs-6">
-                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <%--<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                       <!-- Indicators -->
                       <ol class="carousel-indicators">
                         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -48,7 +48,7 @@ Inherits="System.Web.Mvc.ViewPage<CornKillers.Models.LogOnModel>" %>
                       <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
                         <span class="glyphicon glyphicon-chevron-right"></span>
                       </a>
-                    </div>
+                    </div>--%>
                 </div>
 
                 <div id="LoginPanel" class="col-xs-5 col-xs-offset-1 gray form-horizontal">

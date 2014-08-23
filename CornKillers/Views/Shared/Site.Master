@@ -21,15 +21,13 @@
             <div id="Logo" class="col-md-12 text-center">
                 <img src="../../Content/Images/Logo_CornKillers.png" alt="Logo"/>
             </div>
-              
-            <div id="logindisplay">
-                <% Html.RenderPartial("LogOnUserControl"); %>
-            </div>
-            <div>
-                <%: Html.ActionLink("LogOut", "LogOff", "Account")%>
-            </div> 
-            
         </header>
+        <div id="logindisplay">
+            <% Html.RenderPartial("LogOnUserControl"); %>
+        </div>
+        <div>
+            <%: Html.ActionLink("LogOut", "LogOff", "Account")%>
+        </div>
         <%--<img src="../../Content/Images/pop-corn1.png" class ="pop-corns corn1"/>
         <img src="../../Content/Images/pop-corn2.png" class ="pop-corns corn2"/>
         <img src="../../Content/Images/pop-corn3.png" class ="pop-corns corn3"/>
