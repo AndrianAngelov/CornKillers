@@ -16,12 +16,12 @@ namespace CornKillers.Controllers
             ViewData["Message"] = "Welcome to ASP.NET MVC!";
             ViewData["PopCorn"] = "Eat all these little bastards";
 
-            var db = new CornKillersContext();
-            var serial = new Serial();
-            serial.Name = "AppHb";
-            serial.Description = "BigDrama";
-            db.Series.Add(serial);
-            db.SaveChanges();
+            //var db = new CornKillersContext();
+            //var serial = new Serial();
+            //serial.Name = "AppHb";
+            //serial.Description = "BigDrama";
+            //db.Series.Add(serial);
+            //db.SaveChanges();
 
             return View();
         }

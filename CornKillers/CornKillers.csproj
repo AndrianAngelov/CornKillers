@@ -97,6 +97,7 @@
     <Content Include="Content\Images\pop-corn2.png" />
     <Content Include="Content\Images\pop-corn3.png" />
     <Content Include="Content\Images\pop-corn4.png" />
+    <Content Include="Content\JS\Test.js" />
     <Content Include="Content\MyCss.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />

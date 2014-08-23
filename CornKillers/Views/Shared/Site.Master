@@ -10,6 +10,7 @@
     <link href="../../Content/MyCss.css" rel="stylesheet" type="text/css" />
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <%--<script src="../../Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>--%>
+    <%--<script src="../../Content/JS/Test.js" type="text/javascript"></script>--%>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>
 

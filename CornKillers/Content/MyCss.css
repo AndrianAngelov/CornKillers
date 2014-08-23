@@ -34,15 +34,15 @@ header
 	background:#6D9197;
 }
 
-footer
-{
+footer{
 	color:#fff;
-	background-color:#2F575D;
+	background-color:#2f575d;
 }
 
-.vcenter-row {
+.vcenter-row{
     display:table;
 }
+
 .vcenter {
     display:table-cell;
     vertical-align:middle;
