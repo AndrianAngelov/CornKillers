@@ -31,17 +31,29 @@ namespace CornKillers
                 new { controller = "Account", action = "LogOff", id = UrlParameter.Optional } // Parameter defaults
             );
 
+            routes.MapRoute(
+                "AddSerial", // Route name
+                "{controller}/{action}", // URL with parameters
+                new { controller = "SerialsAdministration", action = "Create" } // Parameter defaults
+            );
+
+            //routes.MapRoute(
+            //    "Home", // Route name
+            //    "{controller}/{action}/{id}", // URL with parameters
+            //    new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Parameter defaults
+            //);
+
             //routes.MapRoute(
             //    "Default", // Route name
             //    "{controller}/{action}/{id}", // URL with parameters
             //    new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Parameter defaults
             //);
 
-            routes.MapRoute(
-                "Default", // Route name
-                "{controller}/{action}/{id}", // URL with parameters
-                new { controller = "Account", action = "LogOn", id = UrlParameter.Optional } // Parameter defaults
-            );
+            //routes.MapRoute(
+            //    "Default", // Route name
+            //    "{controller}/{action}/{id}", // URL with parameters
+            //    new { controller = "Account", action = "LogOn", id = UrlParameter.Optional } // Parameter defaults
+            //);
 
         }
 

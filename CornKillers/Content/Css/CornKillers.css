@@ -1,0 +1,124 @@
+﻿/* File Created: август 23, 2014 */
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url("//themes.googleusercontent.com/static/fonts/opensans/v6/u-WUoqrET9fUeobQW7jkRT8E0i7KZn-EPnyo3HZu7kw.woff") format('woff');
+}
+
+body {
+	background-color:#DEE1DD;
+	font-family:OpenSans;
+	background-image:url(../../Content/Images/camera.png);
+}
+.container {
+	width: 98%;
+	padding-top:2em;
+	padding-bottom: 2em;
+}
+
+/*#region Header */
+header.navbar {
+	background-image:
+    radial-gradient(
+      #2F575D,
+      #28363D
+    );
+    padding: 10px;
+    margin-bottom: 0;
+}
+/*#endregion*/
+
+/*#region Content */
+.gray {
+	background:#6D9197;
+}
+
+.textWhiteBold {
+	color:white;
+	font-weight: bold;
+}
+
+#main {
+	/*background-color:#DEE1DD;*/
+	/*background-image:url(../../Content/Images/camera.png);*/
+}
+
+/*#region Info */
+main #InfoSlider {
+	/*background-color: Red;*/
+	height: 200px;
+}
+/*#endregion*/
+
+/*#region LoginForm */
+
+#LoginForm{
+	background:#6D9197;
+	background-image:  url(../../Content/Images/film.png);
+	background-size:100% 100%;
+	padding:15px;
+}
+	#LoginForm a{
+		color: White;
+		font-weight: bold;
+	}
+	
+	#LoginForm #loginBtn {
+		font-weight: bold;
+		width: 100%;
+	}
+	
+	#LoginForm .validation-summary-errors {
+		color: #fff;
+		background-color: Red;
+		font-weight: bold;
+	
+		margin-top: 20px;
+		text-align: center;
+	}
+	#LoginForm .field-validation-error {
+		color: white;
+		background-color: Red;
+	}
+
+/*#endregion*/
+/*#endregion*/
+
+/*#region Footer */
+footer {
+	color:#fff;
+	background-color:#2f575d;
+}
+	#myInfo a {
+		color: #c4cdc1;
+	}
+		
+	#footerSocialMedia a {
+		display:inline-block;
+		box-sizing: border-box;
+		border: 1px solid #2f575d;
+		padding: 10px 0 8px 0;
+		text-align: center;
+	
+	}
+	
+	#footerSocialMedia a:hover{
+		border: 1px solid #fff;
+		border-radius: 2px;
+	}
+	
+		#footerSocialMedia a i {
+			color: White;
+		}
+	
+.vcenter-row{
+    display:table;
+}
+
+.vcenter {
+    display:table-cell;
+    vertical-align:middle;
+    float:none;
+}
+/*#endregion*/

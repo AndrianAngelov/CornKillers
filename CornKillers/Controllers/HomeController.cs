@@ -11,6 +11,18 @@ namespace CornKillers.Controllers
     [HandleError]
     public class HomeController : Controller
     {
+        IUowData db;
+
+        public HomeController(IUowData db)
+        {
+            this.db = db;
+        }
+
+        public HomeController()
+        {
+            this.db = new UowData();
+        }
+
         public ActionResult Index()
         {
             ViewData["Message"] = "Welcome to ASP.NET MVC!";
@@ -23,7 +35,9 @@ namespace CornKillers.Controllers
             //db.Series.Add(serial);
             //db.SaveChanges();
 
-            return View();
+            var model = this.db.Serials.All().ToList();
+            return View(model); 
+            //return View();
         }
 
         public ActionResult About()

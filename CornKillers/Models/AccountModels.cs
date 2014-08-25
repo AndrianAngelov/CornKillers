@@ -164,7 +164,7 @@ namespace CornKillers.Models
         {
             if (String.IsNullOrEmpty(userName)) throw new ArgumentException("Value cannot be null or empty.", "userName");
 
-            //FormsAuthentication.SetAuthCookie(userName, createPersistentCookie);
+            FormsAuthentication.SetAuthCookie(userName, createPersistentCookie);
         }
 
         public void SignOut()

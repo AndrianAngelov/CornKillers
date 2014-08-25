@@ -5,63 +5,54 @@
   src: local('Open Sans'), local('OpenSans'), url("//themes.googleusercontent.com/static/fonts/opensans/v6/u-WUoqrET9fUeobQW7jkRT8E0i7KZn-EPnyo3HZu7kw.woff") format('woff');
 }
 
-body 
-{
+html,body {
 	color:#282828;
-	/*background-color:#282828;*/
-	/*background-image:  url(../Content/Images/bg-pop-corns.jpg);
-    background-repeat: repeat;*/
-    
+    /*height: 100%;*/
 }
 
-header
+.row 
 {
-	/*background-color:#2F575D;*/
+	/*padding: 30px;*/
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+header {
 	background-image:
     radial-gradient(
       #2F575D,
       #28363D
     );
+    padding: 10px;
 }
 
-.container-fluid
-{
-	background-color:#DEE1DD;
-}
+	header img {
+		
+	}
 
-.gray
-{
+.gray {
 	background:#6D9197;
 }
 
-footer{
-	color:#fff;
-	background-color:#2f575d;
+/*#region Content */
+#main {
+	background-color:#DEE1DD;
 }
-
-.vcenter-row{
-    display:table;
-}
-
-.vcenter {
-    display:table-cell;
-    vertical-align:middle;
-    float:none;
-}
-
-footer div:nth-child(3) > a {
-    color: inherit; 
-    text-decoration: none;
-}
-footer div:nth-child(3) > a:hover {
-    font-size:1.2em;
+.container-fluid{
+	padding-right: 0; /*15px in bootstrap.css*/
+    padding-left: 0;  /*idem*/
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /*===================
 	 LoginForm
 ====================*/
-#LoginForm
-{
+#LoginForm{
 	padding:15px 0 15px 0;
 }
 
@@ -84,4 +75,45 @@ footer div:nth-child(3) > a:hover {
 	background-size:100% 100%;
 	padding:15px;
 }
+
+/*#endregion*/
+
+/*#region Footer */
+footer{
+	color:#fff;
+	background-color:#2f575d;
+	height: 100%;
+}
+
+	footer a {
+		color:#fff;
+		text-decoration: underline; 
+	}
+
+	footer a:hover {
+		color:#fff;
+		font-weight:bold; 
+	}
+
+	footer div:nth-child(4) > a {
+		color: inherit; 
+	}
+	footer div:nth-child(4) > a:hover {
+		font-size:1.2em;
+		color: #c4cdc1;
+    
+	}
+	
+.vcenter-row{
+    display:table;
+}
+
+.vcenter {
+    display:table-cell;
+    vertical-align:middle;
+    float:none;
+}
+/*#endregion*/
+
+
 

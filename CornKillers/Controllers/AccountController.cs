@@ -8,6 +8,7 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using System.Web.Security;
 using CornKillers.Models;
+using CornKillers.Data;
 
 namespace CornKillers.Controllers
 {
@@ -18,6 +19,18 @@ namespace CornKillers.Controllers
 
         public IFormsAuthenticationService FormsService { get; set; }
         public IMembershipService MembershipService { get; set; }
+
+        IUowData db;
+
+        public AccountController(IUowData db)
+        {
+            this.db = db;
+        }
+
+        public AccountController()
+        {
+            this.db = new UowData();
+        }
 
         protected override void Initialize(RequestContext requestContext)
         {
@@ -44,6 +57,7 @@ namespace CornKillers.Controllers
                 if (MembershipService.ValidateUser(model.UserName, model.Password))
                 {
                     FormsService.SignIn(model.UserName, model.RememberMe);
+
                     if (!String.IsNullOrEmpty(returnUrl))
                     {
                         return Redirect(returnUrl);
@@ -94,8 +108,13 @@ namespace CornKillers.Controllers
 
                 if (createStatus == MembershipCreateStatus.Success)
                 {
+                    ApplicationUser newUser = new ApplicationUser();
+                    newUser.ApplicationUserID = (Guid)Membership.GetUser(model.UserName).ProviderUserKey;
+                    newUser.Name = model.UserName;
+                    this.db.Users.Add(newUser);
+                    this.db.SaveChanges();
                     FormsService.SignIn(model.UserName, false /* createPersistentCookie */);
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("LogOn", "Account");
                 }
                 else
                 {

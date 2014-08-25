@@ -7,14 +7,16 @@ using CornKillers.Models;
 
 namespace CornKillers.Data
 {
-    public class CornKillersContext:DbContext
+    public class CornKillersContext : DbContext
     {
         public CornKillersContext()
             : base("CornKillersDb")
-        { 
+        {
 
         }
 
-        public DbSet<Serial> Series {get;set;}
+        public DbSet<Serial> Series { get; set; }
+
+        public DbSet<ApplicationUser> ApplicationUsers { get; set; }
     }
 }
