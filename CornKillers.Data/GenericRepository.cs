@@ -5,6 +5,7 @@ using System.Text;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Data;
+using System.Data.Entity.Migrations;
 
 namespace CornKillers.Data
 {
@@ -49,7 +50,7 @@ namespace CornKillers.Data
             }
             else
             {
-                this.DbSet.Add(entity);
+                this.DbSet.AddOrUpdate(entity);
             }
         }
 

@@ -53,9 +53,9 @@ Inherits="System.Web.Mvc.ViewPage<CornKillers.Models.LogOnModel>" %>
                  <div id="ballShadow"></div>
             </div>--%>
        <%-- </div>--%>
-
+    <div class="row">
         <% using (Html.BeginForm("LogOn", "Account", FormMethod.Post,
-                                  new { @id = "LoginForm", @class = "form-horizontal col-md-6 col-md-offset-3" }))
+                                  new { @id = "LoginForm", @class = "form-horizontal col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2" }))
        { %>
         <%: Html.ValidationSummary(true, "Login was unsuccessful. Please correct the errors and try again.")%>
 
@@ -95,4 +95,8 @@ Inherits="System.Web.Mvc.ViewPage<CornKillers.Models.LogOnModel>" %>
             </p>
 
         <% } %>
+    </div>
+
+    <%--<div id="infoGraphic" class="row info">
+    </div>--%>
 </asp:Content>

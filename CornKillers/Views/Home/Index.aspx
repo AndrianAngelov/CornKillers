@@ -17,7 +17,7 @@ Inherits="System.Web.Mvc.ViewPage<IEnumerable<CornKillers.Models.Serial>>" %>
         </p>
     </div>--%>
    
-    <div class="container gray">
+    <div class="container grayOpacity">
         <p class="textwhitebold"><%: Membership.GetUser().UserName %></p>
         <p class="textwhitebold"><%: Membership.GetUser().ProviderUserKey %></p>
         <%--<p class="textwhitebold"><%: Membership.GetUser().ProviderUserKey %></p>--%>
@@ -28,20 +28,27 @@ Inherits="System.Web.Mvc.ViewPage<IEnumerable<CornKillers.Models.Serial>>" %>
                     <th>Serial ID</th>
                     <th>Serial Name</th>
                     <th>Description</th>
+                    <th>Users</th>
                 </tr>
             </thead>
             <tbody>
             <%foreach (var item in Model) 
                 {%>
-                <tr>
+                <tr class="serialsPosters">
                     <td><%=item.SerialID%></td>
                     <td><%=item.Name%></td>
                     <td><%=item.Description%></td>
+                    <td>
+                        <%foreach (var user in item.ApplicationUsers) 
+                        {%>
+                            <p><%=user.Name%></p>
+                        <%}%>
+                    </td>
                 </tr>
             <%}%>
             </tbody>
         </table>
-        <%: Html.ActionLink("Add new serial", "Create", "SerialsAdministration", "AddSerial", new { @class = "textWhiteBold btn btn-danger" })%>
+        <%: Html.ActionLink("Add new serial", "Create", "Serials", new { }, new { @class = "textWhiteBold btn btn-danger" })%>
         
     </div>
 </asp:Content>

@@ -109,7 +109,7 @@ namespace CornKillers.Controllers
                 if (createStatus == MembershipCreateStatus.Success)
                 {
                     ApplicationUser newUser = new ApplicationUser();
-                    newUser.ApplicationUserID = (Guid)Membership.GetUser(model.UserName).ProviderUserKey;
+                    newUser.ApplicationUserGUID = (Guid)Membership.GetUser(model.UserName).ProviderUserKey;
                     newUser.Name = model.UserName;
                     this.db.Users.Add(newUser);
                     this.db.SaveChanges();

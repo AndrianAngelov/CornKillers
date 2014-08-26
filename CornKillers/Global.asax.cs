@@ -59,6 +59,7 @@ namespace CornKillers
 
         protected void Application_Start()
         {
+            //Database.SetInitializer(new MigrateDatabaseToLatestVersion<CornKillersContext, Configuration>());
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<CornKillersContext, Configuration>());
 
             AreaRegistration.RegisterAllAreas();

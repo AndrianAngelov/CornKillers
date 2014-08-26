@@ -11,20 +11,21 @@
     <link href="../../Content/Css/CornKillers.css" rel="stylesheet" type="text/css" />
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <%--<script src="../../Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>--%>
-    <%--<script src="../../Content/JS/Test.js" type="text/javascript"></script>--%>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    
+    
 </head>
 
 <body>
-    <header class="navbar">
-        <div class="container-fluid">
-            <div id="Logo" class="col-xs-6 col-xs-offset-3 text-center">
-                <img class="img-responsive" src="../../Content/Images/Logo_CornKillers.png" alt="Logo" />
+    <div id="wrapper">
+        <header class="navbar">
+            <div class="container-fluid">
+                <div id="Logo" class="col-xs-6 col-xs-offset-3 text-center">
+                    <img class="img-responsive" src="../../Content/Images/Logo_CornKillers.png" alt="Logo" />
+                </div>
             </div>
-        </div>
-    </header>
-    <div class="container">
-        <%--<div id="logindisplay" class="row">
+        </header>
+        <div id="content" class="container">
+            <%--<div id="logindisplay" class="row">
             <% Html.RenderPartial("LogOnUserControl"); %>
         </div>
         <div class="row">
@@ -36,42 +37,42 @@
                 <li><%: Html.ActionLink("About", "About", "Home")%></li>
             </ul>
         </div>--%>
-
-        <div id="main" class="row">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
-        </div>
-    </div>
-    <footer>
-        <div class="container">
-            <%--<div class="row vcenter-row">--%>
-            <div class="row">
-                <div id="myInfo" class="col-md-5">
-                    <p>
-                        Copyright © 2014 Andrian Angelov. All rights reserved.
-                    </p>
-                    <p>
-                        <a href="#" class="danger">CornKillers version 0.0 </a>
-                    </p>
-                    <p>
-                    <span>Developed & Designed By:</span><a href="https://maps.google.com/?ll=42.690543,23.338405&spn=0.004692,0.006899&t=m&z=17">Andrian.Angelov@abv.bg</a></p>
-                </div>
-
-                <div class="col-md-4 vcenter text-center">
-                    <a>
-                        <img id="CompanyLogo" src="~/Content/Images/company_logo.png" alt="Newbie-Code-Logo" runat="server">
-                    </a>
-                    <a>
-                        <img id="Img2" src="~/Content/Images/aa_logo.png" alt="Design-Logo" runat="server">
-                    </a>
-                </div>
-                <div id="footerSocialMedia" class="col-md-3 vcenter text-center">
-                    <a href="#"><i class="fa fa-facebook fa-3x col-sm-2 text-left"></i></a>
-                    <a href="#"><i class="fa fa-google-plus fa-3x col-sm-2 text-center"></i></a>
-                    <a href="#"><i class="fa fa-youtube fa-3x col-sm-2 text-center"></i></a>
-                </div>
+            <div id="main">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
             </div>
         </div>
-    </footer>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <%--<div id="myInfo" class="col-md-5 col-sm-4">--%>
+                    <div id="myInfo">
+                        <p>
+                            Copyright © 2014 Andrian Angelov. All rights reserved.
+                        </p>
+                       <%-- <p>
+                            <a href="#" class="danger">CornKillers version 0.0 </a>
+                        </p>--%>
+                        <p>
+                            <span>Developed & Designed By:</span><a href="https://maps.google.com/?ll=42.690543,23.338405&spn=0.004692,0.006899&t=m&z=17">Andrian.Angelov@abv.bg</a>
+                        </p>
+                    </div>
+                    <%--<div class="col-md-4 vcenter text-center img-responsive">
+                        <a>
+                            <img id="CompanyLogo" class="" src="~/Content/Images/company_logo.png" alt="Newbie-Code-Logo"
+                                runat="server">
+                        </a><a>
+                            <img id="Img2" class="" src="~/Content/Images/aa_logo.png" alt="Design-Logo" runat="server">
+                        </a>
+                    </div>--%>
+                    <%--<div id="footerSocialMedia" class="col-md-3 col-sm-4  text-center">
+                        <a href="#"><i class="fa fa-facebook fa-3x col-sm-2 text-left"></i></a>
+                        <a href="#"><i class="fa fa-google-plus fa-3x col-sm-2 text-center"></i></a>
+                        <a href="#"><i class="fa fa-youtube fa-3x col-sm-2 text-center"></i></a>
+                    </div>--%>
+                </div>
+            </div>
+        </footer>
+    </div>
 
 <script type="text/javascript">
     $(document).ready(function () {
@@ -93,6 +94,8 @@
 </script>
 
 <script src="../../Content/Bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="../../Content/JS/Test.js" type="text/javascript"></script>
 </body>
 
 </html>

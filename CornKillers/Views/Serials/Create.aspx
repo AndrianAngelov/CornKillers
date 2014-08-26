@@ -1,4 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<CornKillers.Models.Serial>" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" 
+Inherits="System.Web.Mvc.ViewPage<CornKillers.Models.Serial>" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
 	Create
@@ -11,16 +12,16 @@
     <% using (Html.BeginForm()) {%>
         <%: Html.ValidationSummary(true) %>
 
-        <fieldset>
+        <%--<fieldset>
             <legend>Fields</legend>
             
             <div class="editor-label">
                 <%: Html.LabelFor(model => model.SerialID) %>
             </div>
-            <div class="editor-field">
+            <%--<div class="editor-field">
                 <%: Html.TextBoxFor(model => model.SerialID) %>
                 <%: Html.ValidationMessageFor(model => model.SerialID) %>
-            </div>
+            </div>--%>
             
             <div class="editor-label">
                 <%: Html.LabelFor(model => model.Name) %>
@@ -41,7 +42,7 @@
             <p>
                 <input type="submit" value="Create" />
             </p>
-        </fieldset>
+        </fieldset>--%>
 
     <% } %>
 

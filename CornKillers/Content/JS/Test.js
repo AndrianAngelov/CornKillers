@@ -8,5 +8,24 @@ function name() {
     }
 }
 
-
-name();
+//$('.serialsPosters').click(){
+//    function f
+//}
+$(document).ready(function () {
+    $(".serialsPosters")
+    .on( "mouseenter", function() {
+        $(this).css({
+            "color": "#fff",
+            "background-color": "#282828",
+            "font-weight": "bolder"
+        });
+    })
+  .on( "mouseleave", function() {
+      var styles = {
+            Color: "#000",
+            backgroundColor : "",
+            fontWeight: ""
+        };
+    $( this ).css( styles );
+    });
+});

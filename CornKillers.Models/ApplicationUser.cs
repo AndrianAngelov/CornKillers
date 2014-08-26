@@ -10,23 +10,23 @@ namespace CornKillers.Models
 {
     public class ApplicationUser
     {
-        //private ICollection<Serial> serials;
+        private ICollection<Serial> serials;
 
         public ApplicationUser()
         {
-
+            this.serials=new HashSet<Serial>();
         }
 
-        //public int ApplicationUserID { get; set; } 
+        public long ApplicationUserID { get; set; }
 
-        public Guid ApplicationUserID { get; set; } 
+        public Guid ApplicationUserGUID { get; set; } 
 
         public string Name { get; set; }
 
-        //public virtual ICollection<Serial> Serials
-        //{
-        //    get { return this.serials; }
-        //    set { this.serials = value; }
-        //}
+        public virtual ICollection<Serial> Serials
+        {
+            get { return this.serials; }
+            set { this.serials = value; }
+        }
     }
 }

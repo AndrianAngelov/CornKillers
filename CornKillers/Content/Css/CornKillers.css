@@ -11,10 +11,12 @@ body {
 	font-family:OpenSans;
 	background-image:url(../../Content/Images/camera.png);
 }
+
 .container {
 	width: 98%;
 	padding-top:2em;
 	padding-bottom: 2em;
+	
 }
 
 /*#region Header */
@@ -32,6 +34,9 @@ header.navbar {
 /*#region Content */
 .gray {
 	background:#6D9197;
+}
+.grayOpacity {
+	background:rgba(109,145,151,0.8);
 }
 
 .textWhiteBold {
@@ -89,6 +94,9 @@ main #InfoSlider {
 footer {
 	color:#fff;
 	background-color:#2f575d;
+	position: absolute;
+	bottom:0;
+	left:0;
 }
 	#myInfo a {
 		color: #c4cdc1;
@@ -111,6 +119,12 @@ footer {
 		#footerSocialMedia a i {
 			color: White;
 		}
+		
+	#infoGraphic {
+		background-color: White ;
+		margin-top: 10px;
+		padding: 10px;
+	}
 	
 .vcenter-row{
     display:table;
@@ -122,3 +136,47 @@ footer {
     float:none;
 }
 /*#endregion*/
+
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+#wrapper {
+	min-height:100%;
+	position:relative;
+}
+header {
+	padding:10px;
+}
+#content {
+	padding:10px;
+	padding-bottom:160px;   
+}
+footer {
+	width:100%;
+	height:150px;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+/*@media screen and (max-width: 500px) 
+{
+	#content {
+	padding-bottom:310px;
+	}
+	footer {
+		height:300px ;
+	}
+}
+
+@media screen and (max-width: 550px) 
+{
+	#content {
+	padding-bottom:280px;
+	}
+	footer {
+		height:270px ;
+	}
+}*/
